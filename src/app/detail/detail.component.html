@@ -1,0 +1,35 @@
+<div>
+
+  <div>Current First name: {{caretaker.firstName}}</div>
+  <div>Current Last name: {{caretaker.lastName}}</div>
+  <div>Currnet Gender: {{caretaker.gender}}</div>
+  <div>Current Id: {{caretaker.id}}</div>
+  <div>
+    <label for="firstname">Change Firstname</label>
+    <input type="text" name="firstname" id="firstname" [(ngModel)]="newFirstName">
+    <button (click)="editFirstName()">Update</button>
+  </div>
+  <div>
+    <label for="lastname">Change Lastname</label>
+    <input type="text" name="lastname" id="lastname" [(ngModel)]="newLastName">
+    <button (click)="editLastName()">Update</button>
+  </div>
+  <div>
+    <label for="gender">Change gender</label>
+    <input type="text" maxlength="1" minlength="1" id="gender" name="gender" [(ngModel)]="newGender">
+    <button (click)="editGender()">Update</button>
+  </div>
+  <div>
+    <button (click)="delete()">Delete</button>
+  </div>
+
+
+</div>
+
+
+<!--
+change lastname, firstName, gender... not id, cause ID
+delete the caretaker
+
+-->
+

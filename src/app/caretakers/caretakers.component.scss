@@ -1,0 +1,45 @@
+
+* {
+  margin: auto;
+}
+
+.caretaker{
+  background: #c7c4c6;
+  height: 3rem;
+  width: 50rem;
+}
+
+.contentContainer:nth-child(even) {
+  background: #9b989a;
+}
+
+.detail{
+  width: 10rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.contentContainer {
+  background: green;
+  height: 20rem;
+  width: 60rem;
+}
+
+.formContainer {
+  background: greenyellow;
+  width: 60rem;
+  height: 20rem;
+  margin-bottom: 5rem;
+}
+
+.container {
+background: aqua;
+  text-align: center;
+  margin: auto;
+  width: 80rem;
+  height: fit-content;
+  padding: 2rem;
+}
+
+
+

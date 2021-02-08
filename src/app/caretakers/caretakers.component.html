@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="formContainer">
+    <h1>Create new caretaker</h1>
+    <div id="firstnameContainer">
+      <label for="firstName">First Name:</label>
+      <input id="firstName" name="firstName" type="text" [(ngModel)]="firstName" minlength="1" maxlength="64">
+    </div>
+    <div id="lastnameContainer">
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" name="lastName" type="text" [(ngModel)]="lastName" minlength="1" maxlength="64">
+    </div>
+    <div id="genderContainer">
+      <label for="gender">Gender:</label>
+      <input id="gender" name="gender" type="text" [(ngModel)]="gender" minlength="1" maxlength="1">
+    </div>
+    <button (click)="createCaretaker()">Create!</button>
+  </div>
+  <table class="contentContainer">
+    <thead>
+    <td>Id</td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Gender</td>
+    <td></td>
+    </thead>
+    <tr *ngFor="let caretaker of caretakers" class="caretaker">
+      <td class="detail">{{caretaker.id}}</td>
+      <td class="detail">{{caretaker.firstName}}</td>
+      <td class="detail">{{caretaker.lastName}}</td>
+      <td class="detail">{{caretaker.gender}}</td>
+      <td class="detail"><button (click)="goToCaretaker(caretaker.id)">Detail</button></td>
+    </tr>
+  </table>
+</div>
