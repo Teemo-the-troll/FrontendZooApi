@@ -28,7 +28,7 @@ export class DetailComponent implements OnInit {
             this.caretaker = data;
           }, (error: HttpErrorResponse) => {
             if (error.status === 404) {
-              this.router.navigate(['caretakers']);
+              this.router.navigate(['404']);
             }
           });
       });
